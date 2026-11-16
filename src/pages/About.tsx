@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Layout from "@/components/site/Layout";
 
-const heroImg = "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886589981_IMGL4288.jpg";
-const storyImg = "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777887598545_IMG_5166-scaled.jpg";
-const expImg1 = "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777887598545_IMG_5166-scaled.jpg";
-const expImg2 = "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777887597410_IMG_5033-scaled.jpg";
+const heroImg = "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864039/fiesta-house-site-static/IMGL4288.jpg";
+const storyImg = "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864046/fiesta-house-site-static/IMG_5166.jpg";
+const expImg1 = "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864046/fiesta-house-site-static/IMG_5166.jpg";
+const expImg2 = "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864045/fiesta-house-site-static/IMG_5033.jpg";
 
 const stats = [
   { num: "500", suffix: "+", label: "Sessions Photographed" },

@@ -1,14 +1,14 @@
-﻿import React from "react";
+import React from "react";
 import * as api from "@/lib/api";
 import { cld } from "@/lib/cloudinary";
 
 const FALLBACK_IG_TILES = [
-  "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886589981_IMGL4288.jpg",
-  "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886699797_IMGL4262.jpg",
-  "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886729905_IMGL4258.jpg",
-  "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886776876_IMGL4215.jpg",
-  "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886824638_IMGL4204.jpg",
-  "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886904058_IMGL4168.jpg",
+  "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_800/v1794864039/fiesta-house-site-static/IMGL4288.jpg",
+  "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_800/v1794864043/fiesta-house-site-static/IMG_4156.jpg",
+  "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_800/v1794864049/fiesta-house-site-static/IMG_5453.jpg",
+  "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_800/v1794864050/fiesta-house-site-static/IMG_5587.jpg",
+  "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_800/v1794864052/fiesta-house-site-static/IMG_6287.jpg",
+  "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_800/v1794864047/fiesta-house-site-static/IMG_5360.jpg",
 ];
 
 const InstagramFeed = () => {
