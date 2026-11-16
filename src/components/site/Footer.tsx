@@ -24,9 +24,9 @@ const Footer = () => {
   }, []);
 
   const miniGalleryImages = [
-    "https://llyqnzwjcikwthxxszni.supabase.co/storage/v1/object/public/assets/1792157407025_IMGL2907-scaled.jpg",
-    "https://llyqnzwjcikwthxxszni.supabase.co/storage/v1/object/public/assets/1792157443706_IMGL4458-scaled.jpg",
-    "https://llyqnzwjcikwthxxszni.supabase.co/storage/v1/object/public/assets/1792157463090_IMGL5861-scaled.jpg",
+    "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_800/v1792608324/fiesta-house-migrated/img-d304c11b5382d3d78c2939afa07bc42b.jpg",
+    "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_800/v1792608372/fiesta-house-migrated/img-561ad105e0690bca34c8eb372bfad191.jpg",
+    "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_800/v1792608399/fiesta-house-migrated/img-4d521981b22678d1a18b26af3caee86c.jpg",
   ];
 
   return (
