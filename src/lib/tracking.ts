@@ -1,6 +1,12 @@
 const isBrowser = typeof window !== "undefined";
 const isLocalHost = isBrowser && /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname);
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 const normalizeApiBaseUrl = (rawValue: string | undefined, localHost: boolean): string => {
   const fallback = localHost ? "http://localhost:5000" : "/backend";
   if (!rawValue) return fallback;
@@ -271,6 +277,13 @@ const postEvent = (payload: Record<string, unknown>): void => {
   }
 };
 
+export const trackGoogleAdsConversion = (conversionLabel: string): void => {
+  if (!isBrowser || typeof window.gtag !== "function") return;
+
+  window.gtag("event", "conversion", {
+    send_to: `AW-410958378/${conversionLabel}`,
+  });
+};
 export const trackEvent = (eventName: string, label?: string | null, context: TrackingEventContext = {}): void => {
   if (!isBrowser) return;
   if (!eventName || isAdminPath(window.location.pathname)) return;
@@ -311,6 +324,7 @@ export const getTrackingContext = () => {
 export const trackPageView = (): void => {
   if (!isBrowser || isAdminPath(window.location.pathname)) return;
   trackEvent("page_view", window.location.pathname);
+  trackGoogleAdsConversion("qdJbCKnDiLkdEKr0-sMB");
   if (window.location.pathname.replace(/\/$/, "") === "/session-packages") {
     trackEvent("packages_viewed", "session_packages", { location: "session_packages" });
   }
@@ -339,6 +353,9 @@ export const initTracking = (): void => {
         location: trackedElement.getAttribute("data-track-location") || undefined,
         packageId: trackedElement.getAttribute("data-track-package-id") || undefined,
       });
+      if (parsed.eventName === "location_click" && parsed.label === "home_get_directions") {
+        trackGoogleAdsConversion("ElnMCKPDiLkdEKr0-sMB");
+      }
     },
     { capture: true }
   );
