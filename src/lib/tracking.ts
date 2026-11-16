@@ -284,6 +284,22 @@ export const trackGoogleAdsConversion = (conversionLabel: string): void => {
     send_to: `AW-410958378/${conversionLabel}`,
   });
 };
+const gtag_report_conversion = (url?: string): void => {
+  const callback = () => {
+    if (url) window.location.href = url;
+  };
+
+  if (!isBrowser || typeof window.gtag !== "function") {
+    if (url) window.location.href = url;
+    return;
+  }
+
+  window.gtag("event", "conversion", {
+    send_to: "AW-410958378/444TCPvTubkdEKr0-sMB",
+    event_callback: callback,
+    event_timeout: 2000,
+  });
+};
 export const trackEvent = (eventName: string, label?: string | null, context: TrackingEventContext = {}): void => {
   if (!isBrowser) return;
   if (!eventName || isAdminPath(window.location.pathname)) return;
@@ -340,6 +356,28 @@ export const initTracking = (): void => {
       if (isAdminPath(window.location.pathname)) return;
 
       const target = event.target as HTMLElement | null;
+      const whatsappLink = target?.closest<HTMLAnchorElement>("a[href]");
+
+      if (whatsappLink) {
+        try {
+          const url = new URL(whatsappLink.href, window.location.href);
+          const isWhatsAppLink =
+            url.hostname === "wa.me" ||
+            url.hostname === "api.whatsapp.com";
+
+          if (isWhatsAppLink) {
+            if (whatsappLink.target === "_blank") {
+              gtag_report_conversion();
+            } else {
+              event.preventDefault();
+              gtag_report_conversion(whatsappLink.href);
+            }
+          }
+        } catch {
+          // Preserve normal link behaviour.
+        }
+      }
+
       const trackedElement = target?.closest<HTMLElement>("[data-track]");
       if (!trackedElement) return;
 
@@ -353,10 +391,15 @@ export const initTracking = (): void => {
         location: trackedElement.getAttribute("data-track-location") || undefined,
         packageId: trackedElement.getAttribute("data-track-package-id") || undefined,
       });
-      if (parsed.eventName === "location_click" && parsed.label === "home_get_directions") {
+
+      if (
+        parsed.eventName === "location_click" &&
+        parsed.label === "home_get_directions"
+      ) {
         trackGoogleAdsConversion("ElnMCKPDiLkdEKr0-sMB");
       }
     },
     { capture: true }
   );
 };
+  
