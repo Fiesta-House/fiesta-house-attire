@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { toast } from "sonner";
 import Layout from "@/components/site/Layout";
 import * as api from "@/lib/api";
-import { trackEvent } from "@/lib/tracking";
+import { trackEvent, trackGoogleAdsConversion } from "@/lib/tracking";
 
 const Contact = () => {
   const [searchParams] = useSearchParams();
@@ -34,6 +34,7 @@ const Contact = () => {
       }
 
       trackEvent("contact_form_submit", formData.package_interest || "unspecified");
+      trackGoogleAdsConversion("ZPGhCKbDiLkdEKr0-sMB");
 
       toast.success("Enquiry sent. We will contact you shortly.");
       setFormData({
