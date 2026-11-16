@@ -165,8 +165,8 @@ const Index = () => {
             "description": "Nairobi's premier luxury maternity photography studio offering exclusive designer gowns, professional makeup, and editorial portraits at Diamond Plaza II, Parklands.",
             "image": [
               "https://www.fiestahousematernity.com/og-image.jpg",
-              "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886589981_IMGL4288.jpg",
-              "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777887598545_IMG_5166-scaled.jpg"
+              "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864039/fiesta-house-site-static/IMGL4288.jpg",
+              "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864046/fiesta-house-site-static/IMG_5166.jpg"
             ],
             "logo": "https://www.fiestahousematernity.com/og-image.jpg",
             "@id": "https://www.fiestahousematernity.com",
@@ -448,7 +448,7 @@ const Index = () => {
                   title: "Expertly Guided Studio Shoots",
                   subtitle: "Studio Shoots",
                   desc: "Step into our studio for an elegant maternity photography experience focused on poses and perfection.",
-                  fallbackImg: "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1778155044498_IMG_5453.jpg",
+                  fallbackImg: "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864049/fiesta-house-site-static/IMG_5453.jpg",
                   link: "/gallery/studio-shoots"
                 },
                 {
@@ -456,7 +456,7 @@ const Index = () => {
                   title: "Our Maternity Gowns",
                   subtitle: "Couture Atelier",
                   desc: "Enhance your maternity photoshoot with our collection of luxurious, hand-crafted designer gowns.",
-                  fallbackImg: "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886824525_IMG_5360-371x347.jpg",
+                  fallbackImg: "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864047/fiesta-house-site-static/IMG_5360.jpg",
                   link: "/maternity-gowns"
                 },
                 {

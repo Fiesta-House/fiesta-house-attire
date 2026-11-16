@@ -22,10 +22,10 @@ import {
 import { Button } from "@/components/ui/button";
 
 const FEATURED_IMAGES = {
-  hero: "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777886589981_IMGL4288.jpg",
-  sets: "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777887598545_IMG_5166-scaled.jpg",
-  wardrobe: "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777887595087_IMGL5485-scaled.jpg",
-  family: "https://silreoobmqwxbloiznyo.supabase.co/storage/v1/object/public/assets/1777887597410_IMG_5033-scaled.jpg",
+  hero: "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864039/fiesta-house-site-static/IMGL4288.jpg",
+  sets: "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864046/fiesta-house-site-static/IMG_5166.jpg",
+  wardrobe: "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864041/fiesta-house-site-static/IMGL5485.jpg",
+  family: "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1794864045/fiesta-house-site-static/IMG_5033.jpg",
 };
 
 const STUDIO_SETS = [
