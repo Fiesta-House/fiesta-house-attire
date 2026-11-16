@@ -464,7 +464,7 @@ const Index = () => {
                   title: "Suspending Concept",
                   subtitle: "Cinematic Art",
                   desc: "Elevate your maternity story with Fiesta House's suspending concept-where gravity meets grace.",
-                  fallbackImg: "https://llyqnzwjcikwthxxszni.supabase.co/storage/v1/object/public/assets/1792157445655_IMGL5067-scaled.jpg",
+                  fallbackImg: "https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1792608374/fiesta-house-migrated/img-389200033d9799c267d8a85d4b65360f.jpg",
                   link: "/gallery/suspending-concept"
                 }
               ].map((concept, i) => {
@@ -516,7 +516,7 @@ const Index = () => {
                 <Link to="/experience" data-track="experience_click:home_sanctuary_text" style={{ color: "var(--magenta)", borderBottom: "1px solid var(--magenta)", paddingBottom: "4px", fontSize: "1rem", fontWeight: "500" }}>Discover the Fiesta Way</Link>
               </div>
               <div style={{ position: "relative" }} className="mobile-center">
-                <img src="https://llyqnzwjcikwthxxszni.supabase.co/storage/v1/object/public/assets/1792157432558_IMGL4318-scaled.jpg" alt="Maternity Portrait" width={1200} height={1600} loading="lazy" decoding="async" style={{ width: "100%", height: "auto", borderRadius: "2px", boxShadow: "clamp(10px, 4vw, 20px) clamp(10px, 4vw, 20px) 0 var(--sky-blue-tint)" }} />
+                <img src="https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1792608356/fiesta-house-migrated/img-e6379ddc70779d73b4d853c331d1562b.jpg" alt="Maternity Portrait" width={1200} height={1600} loading="lazy" decoding="async" style={{ width: "100%", height: "auto", borderRadius: "2px", boxShadow: "clamp(10px, 4vw, 20px) clamp(10px, 4vw, 20px) 0 var(--sky-blue-tint)" }} />
               </div>
             </div>
           </div>
@@ -527,7 +527,7 @@ const Index = () => {
           style={{}}
         >
           <img
-            src="https://llyqnzwjcikwthxxszni.supabase.co/storage/v1/object/public/assets/1792157446467_IMGL5083-scaled.jpg"
+            src="https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1792608376/fiesta-house-migrated/img-96c8d1c160e901fb3a6af42a39ba1523.jpg"
             alt=""
             aria-hidden="true"
             width={1920}
@@ -587,8 +587,8 @@ const Index = () => {
             <div className="grid grid-2" style={{ gap: "6rem", alignItems: "center" }}>
               <div style={{ order: 2 }}>
                 <BeforeAfterSlider
-                  beforeImage="https://llyqnzwjcikwthxxszni.supabase.co/storage/v1/object/public/assets/1792157461177_IMGL5847-scaled.jpg"
-                  afterImage="https://llyqnzwjcikwthxxszni.supabase.co/storage/v1/object/public/assets/1792157459755_IMGL5839-scaled.jpg"
+                  beforeImage="https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1792608397/fiesta-house-migrated/img-276bc93b40e1141ed4fd850963639761.jpg"
+                  afterImage="https://res.cloudinary.com/qk1mtcwx/image/upload/f_auto,q_auto,w_1400/v1792608394/fiesta-house-migrated/img-e970f0241b6fc1462200a28d470777a9.jpg"
                 />
               </div>
               <div style={{ order: 1 }} className="mobile-center">
