@@ -14,6 +14,7 @@ import * as api from "@/lib/api";
 import { useCart } from "@/context/CartContext";
 
 const packagePositioning: Record<string, string> = {
+  "The Aura": "For the mother taking her first step into the house.",
   "The Bloom": "For the mother in her becoming.",
   "The Muse": "For the mother stepping into her glow.",
   "The Icon": "For the mother who knows she is unforgettable.",
