@@ -264,6 +264,7 @@ const Contact = () => {
                         fontSize: "1rem",
                       }}
                     >
+                      <option>The Aura</option>
                       <option>The Bloom</option>
                       <option>The Muse</option>
                       <option>The Icon</option>
