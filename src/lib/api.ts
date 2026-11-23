@@ -1,4 +1,4 @@
-﻿import { authenticatedFetch } from "@/lib/adminAuth";
+import { authenticatedFetch } from "@/lib/adminAuth";
 import { getTrackingContext } from "@/lib/tracking";
 import { RECENT_MASTERPIECES_COUNT, splitHomeGallery } from "@/lib/home-gallery";
 
@@ -524,7 +524,7 @@ const DEFAULT_SHOP_PACKAGES: ShopPackage[] = [
     price: 15000,
     description: 'An intimate introduction to Fiesta House. Ninety minutes with our team, two studio outfits, and six photos edited to gallery finish.',
     duration: '1.5 hours studio time',
-    images_count: '6 final edited photos',
+    images_count: '10 final edited photos',
     outfits_count: '2 studio outfits + styling',
     features: ['Professional makeup'],
     popular: false,
@@ -596,7 +596,7 @@ const DEFAULT_SHOP_PACKAGES: ShopPackage[] = [
     price: 120000,
     description: 'Our flagship Edition. Five hours in our house, with five studio outfits including the signature Fiesta House Power Suit, two styled wigs, and your choice of a custom balloon backdrop with flowers or the Goddess Sculpture Set.',
     duration: '5 hours studio time',
-    images_count: '40 final edited photos',
+    images_count: '30 final edited photos',
     outfits_count: '5 studio outfits + styling',
     features: ['Professional makeup', 'Signature Fiesta House Power Suit included', '2 styled wigs', 'Custom balloon backdrop with flowers OR Goddess Sculpture Set', '1 professionally produced Reel', '8x8 hardcover photobook', '1 A2 fine art mount'],
     popular: false,
