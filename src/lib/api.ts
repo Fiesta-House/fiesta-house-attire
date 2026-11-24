@@ -1,4 +1,4 @@
-import { authenticatedFetch } from "@/lib/adminAuth";
+﻿import { authenticatedFetch } from "@/lib/adminAuth";
 import { getTrackingContext } from "@/lib/tracking";
 import { RECENT_MASTERPIECES_COUNT, splitHomeGallery } from "@/lib/home-gallery";
 
@@ -522,7 +522,7 @@ const DEFAULT_SHOP_PACKAGES: ShopPackage[] = [
     id: 'default-bloom',
     name: 'The Bloom',
     price: 15000,
-    description: 'An intimate introduction to Fiesta House. Ninety minutes with our team, two studio outfits, and six photos edited to gallery finish.',
+    description: 'An intimate introduction to Fiesta House. Ninety minutes with our team, two studio outfits, and ten photos edited to gallery finish.',
     duration: '1.5 hours studio time',
     images_count: '10 final edited photos',
     outfits_count: '2 studio outfits + styling',
@@ -536,7 +536,7 @@ const DEFAULT_SHOP_PACKAGES: ShopPackage[] = [
     price: 25000,
     description: 'A refined session with more time, more wardrobe, and twelve photos edited to gallery finish. Two hours in our hands, three outfits from our private collection.',
     duration: '2 hours studio time',
-    images_count: '20 final edited photos',
+    images_count: '15 final edited photos',
     outfits_count: '3 studio outfits + styling',
     features: ['Professional makeup'],
     popular: false,
@@ -548,7 +548,7 @@ const DEFAULT_SHOP_PACKAGES: ShopPackage[] = [
     price: 35000,
     description: 'A fuller experience for the woman ready to move deeper into the house. Two and a half hours, four outfits, fifteen photos finished to editorial standard, and a fine art A3 mount to take home.',
     duration: '2.5 hours studio time',
-    images_count: '25 final edited photos',
+    images_count: '20 final edited photos',
     outfits_count: '4 studio outfits + styling',
     features: ['Professional makeup', '1 A3 fine art mount'],
     popular: false,

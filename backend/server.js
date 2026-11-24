@@ -584,7 +584,7 @@ const initShopDb = async () => {
         color: "#6EC1E4",
         features: ["Professional makeup"],
         popular: false,
-        description: "An intimate introduction to Fiesta House. Ninety minutes with our team, two studio outfits, and six photos edited to gallery finish."
+        description: "An intimate introduction to Fiesta House. Ninety minutes with our team, two studio outfits, and ten photos edited to gallery finish."
       },
       {
         name: "The Muse",
