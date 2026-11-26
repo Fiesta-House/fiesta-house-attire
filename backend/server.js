@@ -1135,13 +1135,18 @@ app.post('/auth/login', authLoginLimiter, async (req, res) => {
     if (!user.is_active || user.role !== 'admin') {
       return res.status(403).json({ error: 'Account is not allowed to sign in' });
     }
+    let passwordValid;
+    if (/^\$2[aby]\$/.test(user.password_hash)) {
+      passwordValid = await require('bcryptjs').compare(password, user.password_hash);
+    } else {
+      const passwordCheck = await pool.query(
+        'SELECT $1 = crypt($2, $1) AS valid',
+        [user.password_hash, password]
+      );
+      passwordValid = passwordCheck.rows[0].valid;
+    }
 
-    const passwordCheck = await pool.query(
-      'SELECT $1 = crypt($2, $1) AS valid',
-      [user.password_hash, password]
-    );
-
-    if (!passwordCheck.rows[0].valid) {
+    if (!passwordValid) {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
 
